@@ -460,6 +460,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreManager: {fileID: 1522536195}
   diceModel: {fileID: 149750583}
+  rollBtn: {fileID: 1955270119}
+  animator: {fileID: 491034140}
   orientationValues:
   - {x: 180, y: 0, z: 0}
   - {x: 0, y: 0, z: -90}
@@ -468,7 +470,6 @@ MonoBehaviour:
   - {x: 0, y: 0, z: 90}
   - {x: 0, y: 0, z: 0}
   randomRotateDuration: 0.738
-  animator: {fileID: 491034140}
   rotateSpeed: 2500
   targetOrientation: 0
 --- !u!95 &491034140

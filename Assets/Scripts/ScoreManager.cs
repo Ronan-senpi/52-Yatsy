@@ -24,7 +24,7 @@ public class ScoreManager : MonoBehaviour
             animator.SetTrigger(AnimatorKeys.HasLand6);
             return true;
         }
-
         return false;
     }
+
 }

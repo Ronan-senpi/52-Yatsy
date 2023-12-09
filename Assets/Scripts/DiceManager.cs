@@ -1,10 +1,13 @@
 using UnityEngine;
 using UnityEngine.Serialization;
+using UnityEngine.UI;
 
 public class DiceManager : MonoBehaviour
 {
     [SerializeField] private ScoreManager scoreManager;
     [SerializeField] private Transform diceModel;
+    [SerializeField] private Button rollBtn;
+    [SerializeField] private Animator animator;
 
     [FormerlySerializedAs("orientationValue")]
     [Tooltip("L'index + 1 corespond a la valeur de la face ")]
@@ -13,7 +16,7 @@ public class DiceManager : MonoBehaviour
 
     [Range(0f, 1f)] [SerializeField] private float randomRotateDuration = 0.5f;
 
-    [SerializeField] private Animator animator;
+
     [SerializeField] private float rotateSpeed;
     [SerializeField] private int targetOrientation;
 
@@ -39,6 +42,7 @@ public class DiceManager : MonoBehaviour
                 {
                     canGoToOrientation = false;
                     currentTime = 0;
+                    rollBtn.interactable = true;
                     if (scoreManager.Scoring(targetOrientation + 1))
                         animator.SetTrigger(AnimatorKeys.HasLand6);
                 }
@@ -49,6 +53,7 @@ public class DiceManager : MonoBehaviour
     public void Roll()
     {
         GenerateRdmRotate();
+        rollBtn.interactable = false;
         targetOrientation = UnityEngine.Random.Range(0, orientationValues.Length);
         canGoToOrientation = true;
     }
