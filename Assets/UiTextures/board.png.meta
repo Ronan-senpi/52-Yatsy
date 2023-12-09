@@ -811,38 +811,38 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      icon_empty: 1766208953
-      settings_btn: -571633030
+      back_arrow: -618852559
+      beige_line: 2038291744
+      blue_container: 1127209624
+      bonus: -1061531462
+      dark_beige_line: -262781027
+      dice_glow: -1002708588
+      dice_holder: 1269056470
+      green_btn: -696004869
       icon_3x: -497750075
       icon_4x: 1046023379
-      beige_line: 2038291744
-      number_block_green: 1064141060
-      number_block: -214340079
-      yellow_btn: 1826910719
-      blue_container: 1127209624
-      user_container: -1904231303
-      user_icon: 401363787
-      back_arrow: -618852559
-      icon_three: -1418465414
+      icon_empty: 1766208953
       icon_five: 1211214468
-      sub_bg: -566185020
-      icon_small: 1157976979
-      green_btn: -696004869
-      icon_yatzy: 1463857721
-      icon_one: -1252823018
-      dark_beige_line: -262781027
+      icon_four: -1749484810
       icon_house: -784541020
       icon_large: 1618614025
+      icon_one: -1252823018
       icon_question: -52615273
-      bonus: -1061531462
-      icon_four: -1749484810
-      plus_btn: -981751570
-      top_bg: 1711444972
-      dice_glow: -1002708588
-      icon_two: -1764289640
-      dice_holder: 1269056470
       icon_six: -919227947
+      icon_small: 1157976979
+      icon_three: -1418465414
+      icon_two: -1764289640
+      icon_yatzy: 1463857721
       main_bg: -1986567426
+      number_block: -214340079
+      number_block_green: 1064141060
+      plus_btn: -981751570
+      settings_btn: -571633030
+      sub_bg: -566185020
+      top_bg: 1711444972
+      user_container: -1904231303
+      user_icon: 401363787
+      yellow_btn: 1826910719
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
