@@ -6,6 +6,7 @@ public class ScoreManager : MonoBehaviour
     [SerializeField]
     private TMP_Text scoreField;
     [SerializeField] private int valueToScore = 6;
+    [SerializeField] private Animator animator;
     private int currentScore = 0;
 
     private void Start()
@@ -14,12 +15,16 @@ public class ScoreManager : MonoBehaviour
         scoreField.text = currentScore.ToString();
     }
 
-    public void Scoring(int rollValue)
+    public bool Scoring(int rollValue)
     {
         if (rollValue == valueToScore)
         {
             currentScore++;
             scoreField.text = currentScore.ToString();
+            animator.SetTrigger(AnimatorKeys.HasLand6);
+            return true;
         }
+
+        return false;
     }
 }
